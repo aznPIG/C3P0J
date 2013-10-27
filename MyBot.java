@@ -9,7 +9,8 @@ public class MyBot
         PircBotX bot = new PircBotX();
 
         bot.getListenerManager().addListener(new BasicTextCommands());
-
+        bot.setVersion("C3P0J v0.1");
+        bot.setLogin("bot");
         bot.setName("JBot");
         bot.connect("irc.esper.net");
         bot.joinChannel("#C3P0");
