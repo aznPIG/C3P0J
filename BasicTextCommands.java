@@ -8,6 +8,10 @@ public class BasicTextCommands extends ListenerAdapter {
     	String fullMessage = event.getMessage();
     	if (fullMessage.startsWith(".say "))
     		event.respond(fullMessage.substring(5));
+        
+        String fullMessage = event.getMessage();
+        if (fullMessage.startsWith(".help"))
+            event.respond("Available Commands: .say  .help");
 
     }
 }
